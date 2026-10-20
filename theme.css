@@ -1,0 +1,113 @@
+#qq-level-panel{display:block;flex:0 0 auto;width:100%;position:relative;z-index:42}
+html:not([data-qq-theme]) #qq-level-panel{display:none}
+#qq-level-panel[data-placement=compact]{width:auto;flex:0 1 auto;min-width:0;margin-left:auto;margin-right:12px}
+#qq-retro-chrome{display:none}
+html[data-qq-theme]{color-scheme:light;--qq-ink:#1d507c;--qq-tint:#b2dfff50;--qq-border:#51a8e8;--qq-glass:#d7ecff60;--qq-light:#f6fbffc9;--qq-sidebar:#bee0f575;--qq-line:#5caee6;--qq-button-top:#99edff;--qq-button-mid:#0a9dec;--qq-button-bottom:#006bd4;--qq-main-top:#e3f1ff92}
+html[data-qq-theme=gold]{--qq-tint:#ffdda83d;--qq-border:#cb9e52;--qq-glass:#fff1c76b;--qq-light:#fffbedcc;--qq-sidebar:#fce8b482;--qq-line:#d4b568;--qq-button-top:#ffedb2;--qq-button-mid:#eab542;--qq-button-bottom:#b87614;--qq-ink:#785420;--qq-main-top:#fff5d280}
+html[data-qq-theme=mint]{--qq-tint:#b8f4eb38;--qq-border:#73bdb5;--qq-glass:#d7fff164;--qq-light:#f2fffaca;--qq-sidebar:#bef0df7a;--qq-line:#72c5b4;--qq-button-top:#b6fff0;--qq-button-mid:#38bfa4;--qq-button-bottom:#198576;--qq-ink:#256c63;--qq-main-top:#e0fff480}
+html[data-qq-theme],html[data-qq-theme] body{--sidebar-width:248px!important;--main-surface-primary:transparent!important;--main-surface-secondary:#ffffff52!important;--main-surface-tertiary:#c6e4f78c!important;--sidebar-surface-primary:transparent!important;--sidebar-surface-secondary:#ffffff68!important;--sidebar-surface-tertiary:#ffffff6b!important;--bg-primary:transparent!important;--bg-secondary:#ffffff40!important;--bg-tertiary:#ffffff65!important;--text-primary:var(--qq-ink)!important;--text-secondary:var(--qq-ink)!important;--composer-surface-primary:var(--qq-light)!important;color:var(--qq-ink)!important}
+html[data-qq-theme] body{background-image:linear-gradient(var(--qq-tint),var(--qq-tint)),var(--qq-wallpaper)!important;background-position:center;background-size:cover;background-attachment:fixed}
+html[data-qq-theme] .stage-layout{position:fixed!important;inset:62px 26px 25px!important;width:auto!important;height:auto!important;padding:0!important;border:2px solid var(--qq-border);border-top:1px solid #fff;border-radius:0 0 15px 15px;background:linear-gradient(115deg,#e3f4ff42,#dbedff08)!important;box-shadow:inset 0 0 0 2px #ffffffa3,0 0 0 1px #ffffffea,0 6px 22px #2b72a761;overflow:hidden}
+html[data-qq-theme] #qq-retro-chrome{display:contents}
+.qq-titlebar{position:fixed;top:18px;left:26px;right:26px;height:45px;z-index:43;border:2px solid var(--qq-border);border-bottom:1px solid #fff;border-radius:15px 15px 0 0;background:linear-gradient(135deg,#ffffffc9 1%,#aff0ffc4 10%,#58baff9e 50%,#dbfaffb9);box-shadow:inset 0 0 0 1px #fff,0 0 0 1px #fffd;display:flex;align-items:center;justify-content:space-between;padding-left:17px;backdrop-filter:blur(8px)}
+.qq-brand{display:flex;align-items:center;gap:10px;color:#194e7b;font-size:24px;line-height:1;font-weight:600;text-shadow:0 1px 1px #fff}.qq-brand img{width:32px;height:32px;filter:brightness(0) invert(1) drop-shadow(0 1px 1px #297ab4)}.qq-window-tools{display:flex;align-self:flex-start;padding-right:8px}.qq-window-tools button{height:29px;min-width:43px;border:1px solid #579ad1;border-top:0;box-shadow:inset 0 0 0 1px #ffffff9c;background:linear-gradient(#d9f6ffdb,#469bdeb5);color:white;text-shadow:0 1px 2px #21557f;font:22px/1 Arial;cursor:pointer}.qq-window-tools .qq-exit{width:59px;border-color:#ad7771;background:linear-gradient(#f5b9b3,#c4544d);border-radius:0 0 6px 0;font-size:28px}.qq-window-tools .qq-paint{border-radius:0 0 0 6px}.qq-window-tools button:hover{filter:brightness(1.12)}
+
+html[data-qq-theme] #stage-slideover-sidebar{background:linear-gradient(110deg,#f3fbff94,var(--qq-sidebar))!important;border:1px solid var(--qq-line)!important;border-radius:12px;margin:6px 3px 6px 6px;height:calc(100% - 12px)!important;box-shadow:inset 0 0 0 1px #ffffffd9,2px 0 5px #528bb722;backdrop-filter:blur(9px)}
+html[data-qq-theme] #sidebar-header{height:28px!important;min-height:28px;justify-content:flex-end}html[data-qq-theme] #sidebar-header>a{display:none}html[data-qq-theme] #sidebar-header button{width:28px;height:28px}
+html[data-qq-theme] #stage-slideover-sidebar nav:not(#stage-sidebar-tiny-bar){padding:0 13px 10px;scrollbar-width:thin}
+html[data-qq-theme] #stage-slideover-sidebar nav a{border-radius:9px;min-height:34px;color:var(--qq-ink);font-size:13px}
+html[data-qq-theme] #stage-slideover-sidebar nav a[data-testid="create-new-chat-button"]{min-height:49px;margin:8px 0 14px;border-radius:15px;border:1px solid #0b86d8;background:linear-gradient(var(--qq-button-top),var(--qq-button-mid) 48%,var(--qq-button-bottom) 52%,#61bcff)!important;box-shadow:inset 0 0 0 2px #bce8ffab,inset 0 2px 3px #fff,0 3px 4px #387ab650;color:#fff!important;text-shadow:0 1px 2px #00599f;font-size:18px;font-weight:650;padding-inline:18px}
+html[data-qq-theme] #stage-slideover-sidebar nav a:hover{background:#fff8}
+html[data-qq-theme] main{background:linear-gradient(110deg,var(--qq-main-top),#e2f3ff25)!important;border-radius:12px;margin:3px 6px 5px 2px;border:1px solid #ffffffad;box-shadow:inset 0 0 0 1px #65a5d157}
+html[data-qq-theme] #thread{background:transparent!important}
+html[data-qq-theme] form[class*="composer"] [class*="bg-(--composer-surface-primary)"]{border:1px solid var(--qq-border)!important;border-radius:24px!important;background:linear-gradient(150deg,#ffffffd9,var(--qq-light))!important;box-shadow:inset 0 0 0 2px #fffc,0 3px 5px #3c86bc30!important;padding:5px 8px}
+html[data-qq-theme] .composer-submit-btn{background:linear-gradient(var(--qq-button-top),var(--qq-button-mid) 48%,var(--qq-button-bottom) 52%,#54b3f9)!important;border:1px solid #247aca!important;box-shadow:inset 0 0 0 2px #b9eaffbf,0 2px 4px #1756845c!important;color:white!important;width:45px!important;height:45px!important}
+html[data-qq-theme] #composer-plus-btn{border-radius:50%;background:linear-gradient(#fff9,#b8dffd9e);border:1px solid #a3cfee;color:#276b9f}
+html[data-qq-theme] .markdown{color:#20445e}
+html[data-qq-theme] [data-message-author-role="assistant"]{background:#f8fcfff0;border:1px solid #ffffffd9;border-radius:18px;padding:18px 22px;box-shadow:0 2px 8px #2d6e9b12;min-width:0}
+html[data-qq-theme] [data-message-author-role="user"]{--user-chat-width:100%}
+html[data-qq-theme] [data-message-author-role="user"] .user-message-bubble-color{background:#e7f3ffed!important;border:1px solid #abd3ef}
+html[data-qq-theme] [data-message-author-role="assistant"] .markdown table{background:#fff9}
+html[data-qq-theme] [data-message-author-role="assistant"] .markdown div:has(table){width:100%!important;max-width:100%!important;min-width:0!important;margin-inline:0!important}
+html[data-qq-theme] [data-message-author-role="assistant"] .markdown div:has(>table){overflow-x:auto}
+html[data-qq-theme] [data-message-author-role="assistant"] .markdown th,html[data-qq-theme] [data-message-author-role="assistant"] .markdown td{border-color:#b8d0e1}
+html[data-qq-theme]:not(.qq-start) #thread-bottom-container{background:#e7f3fff5!important;border-top:1px solid #ffffffb3;backdrop-filter:blur(12px)}
+html[data-qq-theme]:not(.qq-start) form[class*="composer"] [class*="bg-(--composer-surface-primary)"]{background:linear-gradient(150deg,#fff,#edf7ff)!important}
+html[data-qq-theme].qq-home #thread,html[data-qq-theme].qq-home .composer-parent{min-height:calc(100svh - 156px)!important}
+html[data-qq-theme].qq-home .composer-parent{position:relative}
+html[data-qq-theme].qq-home .composer-parent>div:first-child{position:absolute;inset:0 0 125px;justify-content:center!important;min-height:0!important;pointer-events:none}
+html[data-qq-theme].qq-home h1[data-qq-greeting]{font-size:0!important;display:block!important;line-height:1.5!important;text-align:center;font-weight:600!important;text-shadow:0 1px 0 white}
+html[data-qq-theme].qq-home h1[data-qq-greeting]>*{display:none!important}
+html[data-qq-theme].qq-home h1[data-qq-greeting]:before{content:"";display:block;width:108px;height:108px;margin:0 auto 16px;background-image:var(--qq-logo);background-size:contain;background-repeat:no-repeat;background-position:center;filter:brightness(0) invert(1) drop-shadow(0 3px 2px #3384c56e);opacity:.95}
+html[data-qq-theme].qq-home h1[data-qq-greeting]:after{content:"今天聊点什么？";font-size:32px;color:var(--qq-ink);letter-spacing:2px}
+html[data-qq-theme].qq-home #thread-bottom-container{position:absolute!important;bottom:10px!important;left:0;right:0;min-height:0!important;flex-grow:0!important;padding-top:0!important;background:none!important}
+html[data-qq-theme].qq-home #thread-bottom [class*="--thread-content-max-width"]{max-width:none!important;--thread-content-max-width:100%!important}
+html[data-qq-theme].qq-home #thread-bottom [class*="--thread-content-margin"]{padding-left:24px!important;padding-right:24px!important}
+html[data-qq-theme].qq-home #thread-bottom [class*="rounded-b-2xl"]{display:none!important}
+/* The home composer is pinned to the bottom. Its inline attachment/search
+   popover must open above that anchor rather than below the clipped frame. */
+html[data-qq-theme].qq-home #thread-bottom .popover{
+ top:auto!important;bottom:calc(100% + 10px)!important;transform:none!important;
+ max-height:min(420px,calc(100svh - 250px))!important;
+ overflow-y:auto!important;overscroll-behavior:contain;scrollbar-width:thin!important;
+ background:#f8fcff!important;border:1px solid var(--qq-border);box-shadow:0 8px 28px #214e7630;
+}
+@media(max-height:760px){html[data-qq-theme] #qq-level-panel{zoom:.86}html[data-qq-theme].qq-home h1[data-qq-greeting]:before{width:85px;height:85px}}
+@media(max-width:760px){html[data-qq-theme] .stage-layout{inset:53px 8px 8px!important}.qq-titlebar{top:9px;left:8px;right:8px}.qq-brand{font-size:20px}html[data-qq-theme].qq-home h1[data-qq-greeting]:after{font-size:24px}#qq-level-panel[data-placement=floating]{width:145px;right:12px;bottom:105px}html[data-qq-theme].qq-home #thread-bottom [class*="--thread-content-margin"]{padding-inline:12px!important}}
+/* Keep glass over real wallpaper even when the application root has an opaque surface. */
+html[data-qq-theme],html[data-qq-theme] body{min-height:100svh;background-image:linear-gradient(var(--qq-tint),var(--qq-tint)),var(--qq-wallpaper)!important;background-size:cover!important;background-position:center!important}
+html[data-qq-theme] main{background-image:linear-gradient(110deg,var(--qq-main-top),#e2f3ff25),var(--qq-wallpaper)!important;background-size:cover!important;background-position:center!important}
+html[data-qq-theme] #stage-slideover-sidebar nav:not(#stage-sidebar-tiny-bar)>div{position:relative!important;top:auto!important}
+html[data-qq-theme] #stage-slideover-sidebar nav:not(#stage-sidebar-tiny-bar) li{height:auto!important}
+html[data-qq-theme] #stage-slideover-sidebar nav:not(#stage-sidebar-tiny-bar) a[data-testid="create-new-chat-button"]{height:49px!important;margin:5px 0 10px!important}
+html[data-qq-theme] #stage-slideover-sidebar nav:not(#stage-sidebar-tiny-bar)>a{min-height:37px!important;flex-shrink:0}
+html[data-qq-theme]{--qq-main-top:#e3f1ffb8}
+html[data-qq-theme],html[data-qq-theme] body{background-size:200% auto!important;background-position:left bottom!important}
+html[data-qq-theme] main{background-image:linear-gradient(110deg,var(--qq-main-top),#eef7ff66),var(--qq-wallpaper)!important}
+html[data-qq-theme].qq-home h1[data-qq-greeting]:before{width:115px;height:115px}
+
+html[data-qq-theme].qq-start .qq-home-suggestion{display:none!important}
+
+/* Keep the wallpaper on the scroll viewport, so later turns share the same frame. */
+html[data-qq-theme] [class~="group/scroll-root"]{background-image:linear-gradient(110deg,var(--qq-main-top),#eef7ff66),var(--qq-wallpaper)!important;background-size:cover!important;background-position:center!important;border-radius:12px;margin:3px 6px 5px 2px;border:1px solid #ffffffad;box-shadow:inset 0 0 0 1px #65a5d157}
+html[data-qq-theme] [class~="group/scroll-root"] main{background:none!important;border:0;margin:0;box-shadow:none;border-radius:0}
+
+/* User-selected chat styling. Only active while the nostalgic skin is enabled. */
+html[data-qq-theme] [data-message-author-role],
+html[data-qq-theme] [data-message-author-role] .markdown,
+html[data-qq-theme] #prompt-textarea{font-family:var(--qq-chat-font,inherit)!important;font-size:var(--qq-chat-size,16px)!important;line-height:1.7}
+html[data-qq-theme] [data-message-author-role] :is(pre,code,kbd,samp){font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace!important}
+html[data-qq-theme][data-qq-bubble=classic] [data-message-author-role=assistant]{background:#fffef5f5;border:1px solid #dcd8c6;border-radius:10px;box-shadow:0 2px 5px #37607715}
+html[data-qq-theme][data-qq-bubble=classic] [data-message-author-role=user] .user-message-bubble-color{background:#c9edaef5!important;border:1px solid #acd385;border-radius:10px}
+html[data-qq-theme][data-qq-bubble=simple] [data-message-author-role=assistant]{background:#ffffffc9;border-color:transparent;box-shadow:none;border-radius:6px}
+html[data-qq-theme][data-qq-bubble=simple] [data-message-author-role=user] .user-message-bubble-color{background:#ffffffc9!important;border-color:transparent;border-radius:6px}
+@media(max-width:600px){#qq-retro-chrome .qq-brand span{display:none}#qq-retro-chrome .qq-window-tools button{width:32px;min-width:32px}#qq-retro-chrome .qq-window-tools{flex-shrink:0}}
+
+/* October 2026 app shell: scope to stable data attributes, retaining native
+   scrolling, responsive sidebar state, and popup positioning. */
+html[data-qq-theme][data-qq-shell=app] [data-app-shell-frame]{position:fixed!important;inset:62px 26px 25px!important;width:auto!important;height:auto!important;min-height:0!important;border:2px solid var(--qq-border);border-top:1px solid #fff;border-radius:0 0 15px 15px;background:linear-gradient(115deg,#e3f4ff42,#dbedff08)!important;box-shadow:inset 0 0 0 2px #ffffffa3,0 6px 22px #2b72a740;--app-shell-titlebar-top-inset:63px;--app-shell-titlebar-right-inset:28px}
+html[data-qq-theme][data-qq-shell=app] [data-app-shell-titlebar]{top:63px!important;left:28px!important;right:28px!important;width:auto!important}
+html[data-qq-theme][data-qq-shell=app] .app-shell-left-panel{min-height:0}
+html[data-qq-theme][data-qq-shell=app] #app-shell-sidebar{background:linear-gradient(110deg,#f3fbff9c,var(--qq-sidebar))!important;border-radius:0 0 0 12px}
+html[data-qq-theme][data-qq-shell=app] [data-slate-sidebar-content]{margin:5px 4px 5px 0;border:1px solid var(--qq-line);border-radius:12px;background:linear-gradient(110deg,#f3fbff65,var(--qq-sidebar))!important;box-shadow:inset 0 0 0 1px #ffffffc9;min-height:0}
+html[data-qq-theme][data-qq-shell=app] [data-app-navigation-rail]{background:transparent!important}
+html[data-qq-theme][data-qq-shell=app] #app-shell-sidebar nav[role=navigation]{min-height:0;height:100%}
+html[data-qq-theme][data-qq-shell=app] [data-app-action-sidebar-scroll]{min-height:0;scrollbar-width:thin}
+html[data-qq-theme][data-qq-shell=app] #app-shell-sidebar [data-qq-new-chat]{border:1px solid var(--qq-border);border-radius:12px;background:linear-gradient(var(--qq-button-top),var(--qq-button-mid) 48%,var(--qq-button-bottom) 52%,#61bcff)!important;color:#fff!important;box-shadow:inset 0 0 0 1px #bce8ffab,0 2px 4px #387ab630}
+html[data-qq-theme][data-qq-shell=app] main[data-app-shell-main-surface]{min-height:0;overflow:clip}
+html[data-qq-theme][data-qq-shell=app] [data-composer-body]{border:1px solid var(--qq-border)!important;border-radius:24px!important;background:linear-gradient(150deg,#fffffff5,var(--qq-light))!important;box-shadow:inset 0 0 0 2px #fffc,0 3px 7px #3c86bc30!important}
+html[data-qq-theme][data-qq-shell=app] [data-composer-navigation-target=add-context]{border-radius:50%;background:linear-gradient(#fff9,#b8dffd9e);border:1px solid #a3cfee;color:#276b9f}
+html[data-qq-theme][data-qq-shell=app] [data-thread-scroll-footer]{background:linear-gradient(transparent,#e7f3fff5 25%)!important}
+html[data-qq-theme][data-qq-shell=app] [data-content-search-unit-key$=":assistant"]{color:#20445e}
+html[data-qq-theme][data-qq-shell=app] [data-markdown-text-style=assistant-message]{background:#f8fcfff2;border:1px solid #ffffffd9;border-radius:16px;padding:16px 20px;box-shadow:0 2px 8px #2d6e9b12;min-width:0}
+html[data-qq-theme][data-qq-shell=app] [data-user-message-bubble]{background:#e7f3fff5!important;border:1px solid #abd3ef;border-radius:16px}
+html[data-qq-theme][data-qq-shell=app] :is([data-markdown-text-style=assistant-message],[data-user-message-bubble],[data-composer-markdown]){font-family:var(--qq-chat-font,inherit)!important;font-size:var(--qq-chat-size,16px)!important;line-height:1.7}
+html[data-qq-theme][data-qq-shell=app] [data-content-search-unit-key] :is(pre,code,kbd,samp){font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace!important}
+html[data-qq-theme][data-qq-shell=app][data-qq-bubble=classic] [data-markdown-text-style=assistant-message]{background:#fffef5f5;border-color:#dcd8c6;border-radius:10px}
+html[data-qq-theme][data-qq-shell=app][data-qq-bubble=classic] [data-user-message-bubble]{background:#c9edaef5!important;border-color:#acd385;border-radius:10px}
+html[data-qq-theme][data-qq-shell=app][data-qq-bubble=simple] [data-markdown-text-style=assistant-message]{background:#ffffffc9;border-color:transparent;box-shadow:none;border-radius:6px}
+html[data-qq-theme][data-qq-shell=app][data-qq-bubble=simple] [data-user-message-bubble]{background:#ffffffc9!important;border-color:transparent;border-radius:6px}
+@media(max-height:760px){html[data-qq-theme][data-qq-shell=app] #qq-level-panel[data-placement=sidebar]{zoom:.72}}
+@media(max-width:760px){html[data-qq-theme][data-qq-shell=app] [data-app-shell-frame]{inset:53px 8px 8px!important}html[data-qq-theme][data-qq-shell=app] [data-app-shell-titlebar]{top:54px!important;left:10px!important;right:10px!important}}
+
+html[data-qq-theme][data-qq-shell=app] #app-shell-sidebar [data-qq-new-chat] *{color:inherit!important}
